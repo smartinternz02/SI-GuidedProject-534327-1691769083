@@ -10,8 +10,8 @@ import datetime
 import requests
 
 app = Flask(__name__)
-app.secret_key = 'a'
-conn = ibm_db.connect("DATABASE=bludb; HOSTNAME=fbd88901-ebdb-4a4f-a32e-9822b9fb237b.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud; PORT=32731; UID=yms88774;PASSWORD=u9eRWpksHM33mXZd; SECURITY=SSL;SSLServerCertificate = DigiCertGlobalRootCA.crt", "", "")
+
+conn = ibm_db.connect("DATABASE=bludb; HOSTNAME=b70af05b-76e4-4bca-a1f5-23dbb4c6a74e.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud; PORT=32716; UID=yms88774;PASSWORD=u9eRWpksHM33mXZd; SECURITY=SSL;SSLServerCertificate = DigiCertGlobalRootCA.crt", "", "")
 url = "https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send"
 @app.route("/")
 def index():
